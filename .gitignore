@@ -8,6 +8,7 @@
 .pnp.loader.mjs
 .yarn/install-state.gz
 .yarn/unplugged
+.vscode
 
 # testing
 /coverage
