@@ -1,8 +1,8 @@
-# SIWA
+# AlgoStack
 
-SIWA is a boilerplate for building modern web applications with React and Next.js. SIWA is a single-page application (SPA) built inside Next.js. The best of React and Next.js, combined into a seamless experience.
+AlgoStack is a boilerplate for building modern web applications with React and Next.js. AlgoStack is a single-page application (SPA) built inside Next.js. The best of React and Next.js, combined into a seamless experience.
 
-This is a SIWA project bootstrapped with [Next.js](https://nextjs.org/) and [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a AlgoStack project bootstrapped with [Next.js](https://nextjs.org/) and [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
 
@@ -35,6 +35,6 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 ## Deploy on Vercel
 
-The easiest way to deploy your SIWA app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The easiest way to deploy your AlgoStack app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment](https://nextjs.org/docs/deployment) for more details.
