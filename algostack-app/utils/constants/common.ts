@@ -1,7 +1,6 @@
 "use client"
 
 import { getLocalStorage } from '@/dashboard/localStorage/localStorage';
-import localStore from 'store';
 
 export const NONE_YET = 'none yet';
 export const PREFERRED_DECIMALS = 2;
@@ -47,10 +46,8 @@ export enum Grid {
 export const PipeConnectors = {
   MyAlgoWallet: 'myAlgoWallet',
   PeraWallet: 'PeraWallet',
-  XWallet: 'escrow',
   Kibisis: 'Kibisis',
-  //AlgoSigner: 'AlgoSigner',
-  //XWallet: 'XWallet'
+  //AlgoSigner: 'AlgoSigner'
 };
 
 /** Local Storage keys */
@@ -74,14 +71,8 @@ export const Themes = {
 /** DEFAULT REDUX VALUES */
 export const DefaultPipeState = {
   address: JSON.parse(String(getLocalStorage(PIPECONNECT_STATE_KEY)))?.address || '',
-  isMainNet:
-    localStore.get(CHAIN_NETWORK_KEY) === true
-      ? true
-      : localStore.get(CHAIN_NETWORK_KEY) === false
-      ? false
-      : process.env.NEXT_NETWORK_TYPE === 'mainnet'
-      ? true
-      : false,
+  isMainNet: JSON.parse(String(getLocalStorage(PIPECONNECT_STATE_KEY)))?.isMainNet || '',
+  isAltChainEnabled: JSON.parse(String(getLocalStorage(PIPECONNECT_STATE_KEY)))?.isAltChainEnabled || '',
   provider: JSON.parse(String(getLocalStorage(PIPECONNECT_STATE_KEY)))?.provider || '',
 };
 
